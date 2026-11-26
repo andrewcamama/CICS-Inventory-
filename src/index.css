@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Public Sans', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-mono, code, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  #qr-print-area,
+  #qr-print-area * {
+    visibility: visible !important;
+  }
+  #qr-print-area {
+    position: fixed;
+    left: 24px;
+    top: 24px;
+    width: 340px;
+    border: 1.5px solid #0f172a !important;
+    padding: 16px !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "CICS Inventory & Asset Tracking System",
+  "description": "Inventory and Asset Tracking Management System for CICS (Mindanao State University - Main Campus) with QR Code scanning, property monitoring, borrowing/returning workflows, and PDF/Excel reporting.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
